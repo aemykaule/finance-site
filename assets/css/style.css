@@ -17,14 +17,15 @@ body{
 }
 header{
     display: flex;
-    color: #fff;
+    color: #FFF;
     width: auto;
     height: 4rem;
     justify-content: space-between;
+    align-items: center;
 }
 header a{
     text-decoration: none;
-    color: #fff;
+    color: #FFF;
 }
 .logo img{
     width: 8rem;
@@ -62,7 +63,8 @@ header a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.box-left p{
+.box-left p,
+footer .row .col p{
     color: rgb(108, 117, 125);
 }
 .box-left button,
@@ -71,8 +73,8 @@ header a{
     height: 4rem;
     background: -webkit-linear-gradient(90deg, rgba(13,202,240,1) 0%, rgba(2,198,210,1) 100%);
     border: none;
-    color: #fff;
-    font-size: 1.2rem;
+    color: #FFF;
+    font-size: 1.2em;
     font-weight: bold;
     margin-top: 2rem;
 }
@@ -90,14 +92,14 @@ header a{
     background: linear-gradient(45deg, rgba(5,137,220,1) 0%, rgba(2,198,210,1) 100%);
 }
 .line02 .col,
-.col-m{
+.line02 .col-m{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 20%;
 }
 .line02 .col img{
-    width: 4rem;
+    width: 3rem;
 }
 .line02 .col-m img{
     width: 8rem;
@@ -105,7 +107,6 @@ header a{
 .row{
     display: flex;
     width: 80rem;
-    margin-top: 0rem;
     justify-content: end;
 }
 .row .col-left{
@@ -122,8 +123,8 @@ header a{
 .row .col-left h2,
 .line03 .box-left h2,
 .line04 .box-left h2{
-    font-size: calc(1.625rem + .8vw);
     margin-top: 1rem;
+    font-size: calc(1.625rem + .8vw);
 }
 .row .col-left h2 span,
 .line03 .beneficio h3 span,
@@ -137,11 +138,11 @@ header a{
     width: 30%;
     height: 30rem;
     background-color: #151515;
-    border: 0.01rem solid #2e2e2e;
+    border: 1px solid #2E2E2E;
     padding: 4rem 3rem;
 }
 .row .col:hover{
-    background-color: #2e2e2e;
+    background-color: #2E2E2E;
 }
 .row .col p,
 .row .col h2{
@@ -173,7 +174,7 @@ header a{
     padding-right: 3rem;
 }
 .line03 .box-left p,
-.line04 .box-left {
+.line04 .box-left p{
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
@@ -187,12 +188,6 @@ header a{
 .line04{
     margin-top: 6rem;
 }
-.line04 .box-left{
-    padding-right: 3rem;
-}
-.line04 .box-left img{
-    justify-content: end;
-}
 .line05 .row{
     width: 80rem;
     justify-content: center;
@@ -203,7 +198,7 @@ header a{
     background-color: #000;
 }
 .line05 .row .col:hover{
-    background-color: #2e2e2e;
+    background-color: #2E2E2E;
 }
 .line05 .row .col button{
     display: block;
@@ -222,11 +217,11 @@ header a{
 }
 .line05 .row .col a{
     text-decoration: none;
-    color: #fff;
+    color: #FFF;
 }
 .line06{
     margin-top: 7rem;
-    background: rgb(5, 137, 220);
+    background: rgb(5,137,220);
     background: linear-gradient(45deg, rgba(5,137,220,1) 0%, rgba(2,198,210,1) 100%);
 }
 .line06 .row{
@@ -238,7 +233,7 @@ header a{
 }
 .line06 .row h2{
     margin-top: 1.5rem;
-    font-size: calc(1.625rem + 2.5vw)
+    font-size: calc(1.625rem + 2.5vw);
 }
 .line06 .slide{
     margin-left: 4rem;
@@ -290,7 +285,7 @@ header a{
     flex-direction: column;
     margin-top: 7rem;
     margin-bottom: 7rem;
-    background: rgb(5, 137, 220);
+    background: rgb(5,137,220);
     background: linear-gradient(45deg, rgba(5,137,220,1) 0%, rgba(2,198,210,1) 100%);
     width: 80rem;
     height: 22rem;
@@ -304,7 +299,7 @@ header a{
     width: 10rem;
     height: 3rem;
     border: none;
-    background-color: #fff;
+    background-color: #FFF;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -314,11 +309,11 @@ header a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-footer .row {
+footer .row{
     justify-content: center;
 }
 footer .row .col{
-    width: auto;
+    height: auto;
     background-color: #000;
     border: none;
 }
@@ -326,6 +321,54 @@ footer .row .col:hover{
     background-color: #000;
 }
 footer .row .col span{
-    display: block;
-    width: 2rem;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+footer .row .col p{
+    margin-top: .5rem;
+    margin-left: .8rem;
+}
+footer .row .col li{
+    list-style: none;
+    margin-top: 1rem;
+}
+footer .row .col h3{
+    color: rgb(108, 117, 125);
+    font-size: 2rem;
+}
+footer .row .col h2{
+    color: rgb(108, 117, 125);
+    margin-top: 1.6rem;
+}
+footer .row .col a{
+    text-decoration: none;
+    color: rgb(108, 117, 125);
+}
+footer .row .col label{
+    display: flex;
+    margin: 1rem 0;
+}
+footer .row .col input{
+    height: 2rem;
+    padding-left: 1rem;
+    border: none;
+}
+footer .row .col button{
+    width: 6rem;
+    border: none;
+    background: rgba(5,137,220,1);
+    background: linear-gradient(45deg, rgba(5,137,220,1)0%, rgba(2,198,210,1)100%);
+}
+footer .row .col .end{
+    margin-left: 0;
+}
+footer .copyright{
+    width: 80rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .copyright p{
+    color: rgb(108, 117, 125);
 }
